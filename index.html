@@ -12,4 +12,23 @@
 	<p style = "margin-left:10%; margin-right:10%;"> <em> When I saw you sitting on that computer like a despicable fatass, I knew that you would be relegated to such a job as the sedentary and unimportant coder. You're a loser, and I hope that makes you feel bad </em> </p>
 	<p><b> Thank you so much for the encouragement!</b></p>
 </body>
+	<p id="demo"></p>
+<script>
+  var countdowndate = new Date("May 1, 2022 12:00:00").getTime();
+  var x = setInterval(function {
+    var now = new Date().getTime();
+    var left = countdowndate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("demo").innerHtml = days +"d " + hours + "h " + minutes + "m " + seconds + "s"
+  }, 1000)
+
+</script>
+
 </html>
