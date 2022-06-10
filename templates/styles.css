@@ -1,0 +1,49 @@
+/* A tag selector with specific traits changed */
+div {
+    color: aliceblue;
+
+}
+/* A class selector with specific traits changed (can be used in class = "class class" for multiple applications */
+.alert {
+    color: magenta;
+}
+/* Class specific grouping identifier (this sets base declaration for both, with ability to provide specificity in single class declarations)*/
+.alert,
+.balert {
+    color: blanchedalmond;
+}
+/* An ID selector with specific traits changed (used in id = "ID") (WARNING: Can only be used once per element on HTML page) */
+#footer {
+    color: midnightblue;
+}
+/* Three different types of grouping selectors and what they correspond to */
+.alert.head{
+    color: blueviolet;
+}
+/* class = "alert head" */
+.alert#footer{
+    color: indianred;
+}
+/* class = "alert" id = "footer" */
+.alert .head {
+    color: rgb(112, 218, 192);
+}
+/* 
+<div class = "alert">
+<div class = "head">
+Lorem ipsum
+<div>
+<div>
+*/
+/* Specific properties of each CSS type */
+html {
+    /* changes the color of any included text*/
+    color: navajowhite;
+      /* hex example: */
+    color: #1100ff;
+     /* rgb example: */
+     color: rgb(100, 0, 127);
+     /* hsl example: */
+     color: hsl(15, 82%, 56%);
+    /*  */
+}
